@@ -16,7 +16,7 @@ Similar to Round Robin, but each server is assigned a weight based on its capaci
 Combines Weighted Round Robin and Least Connections. Each server has a weight, and requests are distributed considering both the number of active connections and the server's capacity. This allows more powerful servers to handle more concurrent sessions.
 
 ### IP Hash
-Assigns client requests to servers based on the client's IP address. This ensures that the same client is consistencly routed to the same server, which is helpful for maintaining session persistence.
+Assigns client requests to servers based on the client's IP address. This ensures that the same client is consistently routed to the same server, which is helpful for maintaining session persistence.
 
 ### Least Response Time
 Routes requests to the server with the lowest recent response time. This helps ensure efficient use of resources and is ideal for services that require low latency.
